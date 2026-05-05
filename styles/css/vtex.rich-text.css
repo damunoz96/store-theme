@@ -67,6 +67,15 @@
   font-weight: 700;
 }
 
+.container--new-arrivals-text {
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.container--new-arrivals-text .paragraph {
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;

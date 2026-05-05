@@ -1,0 +1,244 @@
+{
+  "store.custom#landing": {
+    "blocks": [
+      "list-context.image-list#demo",
+      /* You can make references to blocks defined in other files.
+       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
+      "flex-layout.row#arrivals",
+      "flex-layout.row#deals",
+      "__fold__",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "info-card#home",
+      "rich-text#question",
+      "rich-text#link",
+      "newsletter"
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 1000,
+      "preload": true,
+      "images": [
+        {
+          "image": "https://qastudiof.vtexassets.com/assets/vtex.file-manager-graphql/images/bdecd330-6276-4b09-a4d2-41c370ea254b___0bc3fdea8a5c70ede9437318a3ababf1.jpg",
+          "mobileImage": "https://qastudiof.vtexassets.com/assets/vtex.file-manager-graphql/images/19e6111c-0acf-4a63-a461-0990732f24c7___fac53c6f110b2ba79be969bf16deef87.jpg"
+        },
+        {
+          "image": "https://qastudiof.vtexassets.com/assets/vtex.file-manager-graphql/images/3668ac3b-cd8d-47d0-abdf-5ac44a173970___26a4f3cba27aa0ac120ef78a178e6087.jpg",
+          "mobileImage": "https://qastudiof.vtexassets.com/assets/vtex.file-manager-graphql/images/b10e359b-534a-4c10-9f3f-d80e85fbbc06___43047f176f3e79832db20f3aababf052.jpg"
+        },
+        {
+          "image": "https://qastudiof.vtexassets.com/assets/vtex.file-manager-graphql/images/81b3cf89-b314-4904-9b0c-faee3a4b7a09___7d2458d7478882994f8610e115650a4a.png",
+          "mobileImage": "https://qastudiof.vtexassets.com/assets/vtex.file-manager-graphql/images/86ddef86-3fa6-4d3c-8720-518f6f3b2d1f___a142949b8bbb345abfafe0228d363bf1.png"
+        },
+        {
+          "image": "https://qastudiof.vtexassets.com/assets/vtex.file-manager-graphql/images/f377520a-df7d-41e7-b772-d443ab152974___b023498f15cc378a590c219ca516b3e7.png",
+          "mobileImage": "https://qastudiof.vtexassets.com/assets/vtex.file-manager-graphql/images/ec9eb64c-a2e8-4d19-a318-665a8a94b912___f8ce9b895164c9898920ff213f4dbccd.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots":"onlyMobile",
+      "blockClass": "carousel"
+    }
+  },
+
+  "flex-layout.row#arrivals": {
+    "children":[
+      "responsive-layout.desktop#arrivals"
+      //"responsive-layout.phone#arrivals"
+    ],
+    "props": {
+      "marginTop": 7,
+      "marginBottom": 7,
+      "paddingHorizontal": 5
+    }
+  },
+
+  "responsive-layout.desktop#arrivals": {
+    "children":[
+      "flex-layout.col#arrivals-desktop"
+    ]
+  },
+
+  "flex-layout.col#arrivals-desktop":{
+    "children":[
+      "rich-text#new-arrivals",
+      "flex-layout.row#new-arrivals"
+    ]
+  },
+  "rich-text#new-arrivals": {
+    "props":{
+      "text":"New arrivals",
+      "textAlignment":"center",
+      "textPosition":"middle",
+      "blockClass":"new-arrivals-text"
+    }
+  },
+  "flex-layout.row#new-arrivals": {
+    "children":[
+      "flex-layout.col#arrival-card1",
+      "flex-layout.col#arrival-card2",
+      "flex-layout.col#arrival-card3",
+      "flex-layout.col#arrival-card4"
+    ],
+    "props": {
+      "colGap": 4,
+      "marginTop": 5
+    }
+  },
+  "flex-layout.col#arrival-card1":{
+    "children": [
+      "image#arrival-card1",
+      "link#arrival-card"
+    ],
+    "props": {
+      "blockClass": "arrivalCard"
+    }
+  },
+  "image#arrival-card1":{
+    "props":{
+      "src":"https://qastudiof.vtexassets.com/assets/vtex.file-manager-graphql/images/58c76a52-a717-4c1c-896e-916092ab9e99___896d134d140ef8837206e8ab1a8435e3.jpg",
+      "height":350
+      }
+    },
+  "link#arrival-card": {
+    "props":{
+      "label":"Comprar",
+      "href":"/",
+      "displayMode":"link",
+      "blockClass":"arrivalCardLink"
+    }
+  },
+
+
+  "flex-layout.col#arrival-card2":{
+    "children": [
+      "image#arrival-card2",
+      "link#arrival-card"
+    ],
+    "props": {
+      "blockClass": "arrivalCard"
+    }
+  },
+  "image#arrival-card2":{
+    "props":{
+      "src":"https://qastudiof.vtexassets.com/assets/vtex.file-manager-graphql/images/f44ab445-679b-481b-9797-8f39f96a357b___86d71c09aafda8eb6407ec16a6fe171d.jpg",
+      "height":350
+      }
+    },
+  "flex-layout.col#arrival-card3":{
+    "children": [
+      "image#arrival-card3",
+      "link#arrival-card"
+    ],
+    "props": {
+      "blockClass": "arrivalCard"
+    }
+  },
+  "image#arrival-card3":{
+    "props":{
+      "src":"https://qastudiof.vtexassets.com/assets/vtex.file-manager-graphql/images/f44ab445-679b-481b-9797-8f39f96a357b___86d71c09aafda8eb6407ec16a6fe171d.jpg",
+      "height":350
+      }
+    },
+    
+  "flex-layout.col#arrival-card4":{
+    "children": [
+      "image#arrival-card4",
+      "link#arrival-card"
+    ],
+    "props": {
+      "blockClass": "arrivalCard"
+    }
+  },
+  "image#arrival-card4":{
+    "props":{
+      "src":"https://qastudiof.vtexassets.com/assets/vtex.file-manager-graphql/images/d463944c-f365-4a08-b235-815b767873ec___5127edd93d07d9a1e6e596afe57f136a.jpg",
+      "height":350
+      }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Summer",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "Prueba",
+      "blockClass": "question"
+    }
+  },
+
+  "rich-text#link": {
+    "props": {
+      "text": "\n**Reach us attt**\nwww.vtex.com.br",
+      "blockClass": "link"
+    }
+  }
+}

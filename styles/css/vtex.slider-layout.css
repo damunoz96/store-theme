@@ -29,3 +29,16 @@
   padding-right: .5rem;
   min-height: 550px;
 }
+
+.paginationDot {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: #ccc;
+    transition: width 0.3s ease, background-color 0.3s ease;
+  }
+
+  .paginationDot--isActive {
+    width: 40px;
+    background-color: #000;
+  }

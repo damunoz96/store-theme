@@ -1,0 +1,22 @@
+.link--arrivalCardLink {
+  display: block;
+  width: fit-content;
+  margin: 12px auto 0;
+  background-color: #6F4E37;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 10px 36px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.link--arrivalCardLink:hover,
+.link--arrivalCardLink:focus,
+.link--arrivalCardLink:visited {
+  color: #fff;
+  text-decoration: none;
+  background-color: #5a3f2c;
+}
